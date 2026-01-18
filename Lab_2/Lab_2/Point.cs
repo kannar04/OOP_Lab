@@ -50,6 +50,18 @@ class Point
         {
             Console.WriteLine("Điểm ({0}, {1}) thuộc góc phần tư thứ tư", point.x, point.y);
         }
+        else if (point.x == 0 && point.y != 0)
+        {
+            Console.WriteLine("Điểm ({0}, {1}) nằm trên trục tung", point.x, point.y);
+        }
+        else if (point.x != 0 && point.y == 0)
+        {
+            Console.WriteLine("Điểm ({0}, {1}) nằm trên trục hoành", point.x, point.y);
+        }
+        else
+        {
+            Console.WriteLine("Điểm ({0}, {1}) là gốc tọa độ", point.x, point.y);
+        }
     }
 
     public void CheckSymmetrialPoint(Point point)
