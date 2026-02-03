@@ -50,7 +50,7 @@ class Vecto2d
 
     public bool CungPhuong(Vecto2d other)
     {
-        return Math.Abs(this.x * other.x - this.y * other.y) < 0.001;
+        return Math.Abs(this.x * other.y - this.y * other.x) < 0.0001f;
     }
 
     public bool CungHuong(Vecto2d other)
@@ -63,7 +63,7 @@ class Vecto2d
 
     public bool VuongGoc(Vecto2d other)
     {
-        return Math.Abs(this.Nhan(other)) < 0.0001;
+        return Math.Abs(this.Nhan(other)) < 0.0001f;
     }
 
     public void TinhTien(float dx, float dy)
@@ -76,4 +76,5 @@ class Vecto2d
     {
         return $"({x},{y})";
     } 
+
 }
